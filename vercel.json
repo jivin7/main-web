@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.code-wave.store"
+        }
+      ],
+      "destination": "https://code-wave.store/:1",
+      "permanent": true
+    }
+  ]
+}
