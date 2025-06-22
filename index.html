@@ -5,43 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Code Wave | Website Design & Development</title>
   <link rel="stylesheet" href="style.css">
-<script>
-  if (window.location.hostname === 'www.code-wave.store') {
-    window.location.replace('https://code-wave.store');
-  }
-</script>
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-padding-top: 100px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1> CODE WAVE</h1>
+  <header data-aos="fade-down" style="position: relative;">
+    <h1>CODE WAVE</h1>
     <p>Your partner in modern, stunning websites.</p>
+    <nav
+      <a class="cta-button" href="#about">About</a>
+      <a class="cta-button" href="#services">Services</a>
+      <a class="cta-button" href="#portfolio">Portfolio</a>
+      <a class="cta-button" href="#pricing">Pricing</a>
+      <a class="cta-button" href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="intro">
-    <h2>Custom Websites That Convert</h2>
-    <p>We build fast, beautiful, mobile-ready websites for businesses, brands, and creators. Whether you need a portfolio, an online store, or a full-service business site — Code Wave delivers.</p>
-    <a href="#contact" class="cta-button">Get Your Website Now</a>
+  <section id="about" class="intro" data-aos="fade-up">
+    <h2>About Us</h2>
+    <p>We are a premium web design and development studio focused on delivering high-end digital solutions. Our team of experts blends creativity, code, and business strategy to bring your vision to life.</p>
   </section>
 
-  <section class="features">
+  <section id="services" class="features" data-aos="fade-right">
     <h2>What We Offer</h2>
     <ul>
-      <li> Fully Custom Designs</li>
-      <li> Fast & SEO-Optimized</li>
-      <li> Mobile Responsive</li>
-      <li> E-commerce Integration</li>
+      <li><i class="fas fa-code"></i> Custom Web Development</li>
+      <li><i class="fas fa-mobile-alt"></i> Mobile-First Design</li>
+      <li><i class="fas fa-shopping-cart"></i> E-commerce Integration</li>
+      <li><i class="fas fa-paint-brush"></i> UI/UX Design & Branding</li>
+      <li><i class="fas fa-chart-line"></i> SEO & Performance Optimization</li>
+      <li><i class="fas fa-cloud"></i> Hosting & Maintenance</li>
     </ul>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Start Your Project</h2>
-    <p>Email us at <a href="jivinhany7@gmail.com">jivinhany7@gmail.com</a> to get started!</p>
+  <section id="portfolio" class="intro" data-aos="fade-left">
+    <h2>Our Work</h2>
+    <p>Check out some of the premium websites we've crafted for clients across various industries:</p>
+    <ul>
+      <li><strong>Glow Cosmetics</strong> - A luxury beauty brand e-commerce platform</li>
+      <li><strong>Nova Studio</strong> - A creative portfolio for a design agency</li>
+      <li><strong>FastGo</strong> - A landing page for a mobile app startup</li>
+    </ul>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Code Wave. All rights reserved.</p>
+  <section id="pricing" class="features" data-aos="zoom-in">
+    <h2>Pricing (EGP)</h2>
+    <ul>
+      <li><strong>Starter Website</strong> – EGP 200= <br><small>1-Page design, contact form, mobile-ready</small></li>
+      <li><strong>Business Website</strong> – EGP 400= <br><small>Multi-page, blog, SEO optimized, CMS ready</small></li>
+      <li><strong>Premium Website</strong> – EGP 600+ <br><small>Custom UI/UX, animations, advanced features, e-commerce ready</small></li>
+    </ul>
+    <p>Contact us for custom project estimates and add-ons.</p>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Start Your Project</h2>
+    <form action="https://formsubmit.co/el/remipe" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://code-wave.store/thank-you.html">
+
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea><br><br>
+
+      <button class="cta-button" type="submit">Send</button>
+    </form>
+    <p>Or email us directly at <a href="mailto:jivinhany7@gmail.com">jivinhany7@gmail.com</a></p>
+  </section>
+
+  <footer data-aos="fade-in">
+    <p>&copy; 2025 Code Wave. All rights reserved. | Designed with passion by real programmers.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  </script>
 </body>
 </html>
 
