@@ -30,9 +30,7 @@ header {
   padding: 3rem 1.5rem;
   text-align: center;
   box-shadow: var(--shadow);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  /* Sticky removed so header scrolls with the page */
 }
 
 header h1 {
@@ -153,5 +151,20 @@ footer {
     padding: 0.6rem 1.3rem;
     font-size: 0.95rem;
   }
+}
+/* === Header with Logo and Title === */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
